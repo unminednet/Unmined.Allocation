@@ -1,0 +1,33 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net6.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<GenerateDocumentationFile>true</GenerateDocumentationFile>
+
+		<Version>0.1.1</Version>
+
+		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+
+		<Description>Replaceable memory allocation pool for uNmINeD</Description>
+		<RepositoryUrl>https://github.com/unminednet/Unmined.Allocation.git</RepositoryUrl>
+		<PackageProjectUrl>https://github.com/unminednet</PackageProjectUrl>
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
+		<Authors>Balázs Farkas</Authors>
+		<Copyright>Copyright (C) 2011-2022 Balázs Farkas</Copyright>
+		<PackageTags>unmined</PackageTags>
+		<RepositoryType>git</RepositoryType>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<None Include="../LICENSE.txt" Link="LICENSE.txt" Pack="true" PackagePath="$(PackageLicenseFile)">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</None>
+		<None Include="../README.md" Link="README.md" Pack="true" PackagePath="$(PackageReadmeFile)">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</None>
+	</ItemGroup>
+
+</Project>
